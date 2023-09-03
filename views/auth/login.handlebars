@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Ecommerce</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <form action="/api/auth/login-local" method="post" class="h-screen flex flex-col justify-center items-center bg-gray-100">
+        <div class="w-8/12 flex justify-center border-2 border-gray-200 items-center bg-white rounded-2xl shasow-2xl">
+            <div class="w-3/6">
+                <img src="https://img.freepik.com/vector-gratis/concepto-isometrico-compras-personas_23-2147846293.jpg?w=2000" class="object-cover h-full w-full" alt="">
+            </div>
+            <div class="w-3/6 my-5">
+                <h1 class="font-bold text-center text-2xl">E-Commerce Beta</h1>
+                <p class="text-smibold text-center">Bienvenido</p>
+                <div class="w-full my-5 flex flex-col justify-center items-center">
+                    <div class="h-1 w-9/12 mb-5 rounded-full bg-sky-800"></div>
+                 
+                    <input name="email" class="p-1 border-2 border-sky-900 rounded-lg mb-5 w-7/12" type="email" placeholder="Email" required />
+                    <input name="password" class="p-1 border-2 border-sky-900 rounded-lg mb-5 w-7/12" type="password" placeholder="*****" type="password" required />
+
+                    <button type="submit" class="transition duration-300 bg-blue-500 w-7/12 p-2 rounded-xl text-white hover:bg-blue-700">Login</button>
+
+                    <div class="my-5">
+                        <h1 class="text-gray-400 text-xs">O Inicia Sesion con otras opciones</h1>
+                    </div>
+
+                    <a href="/api/auth/login-github" class="border-2 p-2 border-2 text-center border-gray-300 w-7/12 hover:bg-gray-200 rounded-lg ">
+                        GitHub
+                    </a>
+
+                    <a href="/register" class="mx-auto mt-5 hover:text-blue-500 text-xs">¿No tienes usuario? Crea tu cuenta</a>
+      
+                </div>
+            </div>
+        </div>
+    </form>
+</body>
+</html>

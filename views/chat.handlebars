@@ -1,0 +1,15 @@
+<h1>Chat</h1>
+
+<form id="chat_form">
+    <label>Email</label>
+    <input type="text" id="email_input" name="email_input" />
+    <label>Message</label>
+    <input type="text" id="message_input" name="message_input" />
+    <button id="message_btn">Enviar</button>
+</form> 
+
+<div id="log_messages"></div>
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="/socket.io/socket.io.js"></script>
+<script src="/static/js/chat.js"></script>

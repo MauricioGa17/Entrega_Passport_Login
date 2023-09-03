@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <nav>
+        <div class="flex flex-row justify-between bg-gray-800 p-2 px-5">
+            <h1 class="text-white">Ecommerce</h1>
+            <ul class="flex">
+                <li class="text-white hover:text-gray-300"><a href="/profile">Profile</a></li>
+                <li class="text-white hover:text-gray-300 ml-5"><a href="/products">Products</a></li>
+                <form action="/api/auth/logout" method="post">
+                    <button type="submit" class="font-semibold text-red-500 hover:text-red-600 ml-5">
+                        Logout
+                    </button>
+                </form>
+            </ul>
+        </div>
+    </nav>
+    {{{ body }}}
+</body>
+</html>

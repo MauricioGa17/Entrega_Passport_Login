@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <div class="h-screen flex flex-col justify-center items-center bg-gray-600">
+        <div class="bg-white flex flex-col justify-center items-center w-3/12 h-auto p-5">
+            <h1 class="font-semibold text-xl mb-10">Registro</h1>
+            <form action="/api/auth/register" method="post">
+                <input name="first_name" class="p-2 border-2 border-gray-400 rounded-lg mb-5 w-full" type="text" placeholder="First Name" required />
+                <input name="last_name" class="p-2 border-2 border-gray-400 rounded-lg mb-5 w-full" type="text" placeholder="Last name" required />
+                <input name="age" class="p-2 border-2 border-gray-400 rounded-lg mb-5 w-full" type="number" step="1" placeholder="Age" required />
+                <input name="email" class="p-2 border-2 border-gray-400 rounded-lg mb-5 w-full" type="email" placeholder="Email" required />
+                <input name="password" class="p-2 border-2 border-gray-400 rounded-lg mb-5 w-full" type="password" placeholder="Password" type="password" required />
+
+
+                <button type="submit" class="transition duration-300 bg-blue-500 w-full p-2 rounded-xl text-white hover:bg-blue-700">Registrer</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
